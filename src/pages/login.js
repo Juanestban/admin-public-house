@@ -1,13 +1,13 @@
 import { Helmet } from 'react-helmet-async'
 
-export default function HomePage() {
+export default function LoginPage() {
   return (
     <>
       <Helmet>
-        <title>public house - Home</title>
+        <title>public house - Login</title>
       </Helmet>
       <div>
-        <h1>hello World</h1>
+        <h1>Login-page</h1>
       </div>
     </>
   )
