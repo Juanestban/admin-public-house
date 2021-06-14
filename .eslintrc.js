@@ -20,5 +20,6 @@ module.exports = {
     'no-unused-vars': 0,
     'react/prop-types': 0,
     'dot-notation': 0,
+    'multiline-ternary': 0,
   },
 }

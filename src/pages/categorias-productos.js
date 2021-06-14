@@ -18,7 +18,7 @@ export default function CategoriasProductosPage() {
     isEdit && setValCategoria(data)
     if (!isEdit) {
       const confirmarPregunta = confirm(
-        'si eleminas estan categoria, eliminaras los productos que tengan relacion con esta categoria'
+        'si eleminas esta categoria, eliminaras los productos que tengan relacion con esta categoria'
       )
       if (confirmarPregunta) {
         await eliminarCatProdServices(data)
