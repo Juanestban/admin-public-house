@@ -46,10 +46,10 @@ export default function App() {
                 <Route exact path="/pedidos">
                   <PedidosPage />
                 </Route>
+                <Route exact path="/login">
+                  <LoginPage />
+                </Route>
               </LayoutPrincipal>
-              <Route exact path="/login">
-                <LoginPage />
-              </Route>
             </Switch>
           </Container>
         </Router>

@@ -12,10 +12,15 @@ export const useQuery = (fetchAxios) => {
       setIsLoading(true)
       const { data } = await fetchAxios()
       setData(data)
+      setIsLoading(false)
     } catch ({ response: { mensaje } }) {
+      setIsLoading(false)
+      setIsError(true)
       setMsgError(mensaje || 'Error en el servidor')
     }
   }
+
+  // falta post, put y delete
 
   const refresh = () => fetchQuery()
 

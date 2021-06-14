@@ -21,6 +21,7 @@ export default function LayoutPrincipal({ children }) {
         justifyContent="center"
         alignItems="center"
         minHeight="70vh"
+        marginBottom="20px"
       >
         {children}
       </Box>
