@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import CardCategory from '../components/CardCategory'
 
 export default function CategoriasProductosPage() {
   return (
@@ -6,7 +7,7 @@ export default function CategoriasProductosPage() {
       <Helmet>
         <title>public house - CategoriasProductos</title>
       </Helmet>
-      <h1>Categorias de los productos</h1>
+      <CardCategory />
     </>
   )
 }
