@@ -17,5 +17,8 @@ module.exports = {
     'react/react-in-jsx-scope': 0,
     'space-before-function-paren': 0,
     'comma-dangle': 0,
+    'no-unused-vars': 0,
+    'react/prop-types': 0,
+    'dot-notation': 0,
   },
 }

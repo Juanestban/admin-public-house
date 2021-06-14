@@ -8,6 +8,7 @@ import {
   Container,
 } from '@material-ui/core'
 import HomePage from './pages/home'
+import LoginPage from './pages/login'
 import Navigation from './components/Navigation'
 import themeInitial from './config/theme'
 import './App.css'
@@ -30,6 +31,9 @@ export default function App() {
             <Switch>
               <Route exact path="/">
                 <HomePage />
+              </Route>
+              <Route exact path="/login">
+                <LoginPage />
               </Route>
             </Switch>
           </Container>
