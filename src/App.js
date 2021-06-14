@@ -14,6 +14,7 @@ import themeInitial from './config/theme'
 import CategoriasProductosPage from './pages/categorias-productos'
 import ProductosPage from './pages/productos'
 import PedidosPage from './pages/pedidos'
+import LayoutPrincipal from './components/LayoutPrincipal'
 import './App.css'
 
 export default function App() {
@@ -35,15 +36,17 @@ export default function App() {
               <Route exact path="/">
                 <HomePage />
               </Route>
-              <Route exact path="/categorias-productos">
-                <CategoriasProductosPage />
-              </Route>
-              <Route exact path="/productos">
-                <ProductosPage />
-              </Route>
-              <Route exact path="/pedidos">
-                <PedidosPage />
-              </Route>
+              <LayoutPrincipal>
+                <Route exact path="/categorias-productos">
+                  <CategoriasProductosPage />
+                </Route>
+                <Route exact path="/productos">
+                  <ProductosPage />
+                </Route>
+                <Route exact path="/pedidos">
+                  <PedidosPage />
+                </Route>
+              </LayoutPrincipal>
               <Route exact path="/login">
                 <LoginPage />
               </Route>
