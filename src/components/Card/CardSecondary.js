@@ -2,7 +2,7 @@ import { Card, CardContent, makeStyles } from '@material-ui/core'
 
 const useStyles = makeStyles({
   root: {
-    margin: '0 5px',
+    margin: '10px 5px',
     minWidth: '40%',
   },
 })
